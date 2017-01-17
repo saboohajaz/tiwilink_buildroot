@@ -309,6 +309,13 @@ define LINUX_INSTALL_DTB
 endef
 endif # BR2_LINUX_KERNEL_APPENDED_DTB
 endif # BR2_LINUX_KERNEL_DTB_IS_SELF_BUILT
+
+ifeq ($(BR2_LINUX_KERNEL_DTS_OVERLAYS_SUPPORT),y)
+define LINUX_INSTALL_DTB_OVERLAYS
+	cp $(KERNEL_ARCH_PATH)/boot/dts/overlays/*.dtbo $(1)
+endef
+endif # BR2_LINUX_KERNEL_DTS_OVERLAYS
+
 endif # BR2_LINUX_KERNEL_DTS_SUPPORT
 
 ifeq ($(BR2_LINUX_KERNEL_APPENDED_DTB),y)
@@ -350,6 +357,10 @@ define LINUX_BUILD_CMDS
 	@if grep -q "CONFIG_MODULES=y" $(@D)/.config; then 	\
 		$(LINUX_MAKE_ENV) $(MAKE) $(LINUX_MAKE_FLAGS) -C $(@D) modules ;	\
 	fi
+	$(if $(BR2_LINUX_KERNEL_DTS_OVERLAYS_SUPPORT),
+		$(LINUX_MAKE_ENV) $(MAKE) $(LINUX_MAKE_FLAGS) -C $(@D) dtbs ;		\
+	)
+
 	$(LINUX_BUILD_DTB)
 	$(LINUX_APPEND_DTB)
 endef
@@ -373,6 +384,8 @@ ifeq ($(BR2_LINUX_KERNEL_INSTALL_TARGET),y)
 define LINUX_INSTALL_KERNEL_IMAGE_TO_TARGET
 	$(call LINUX_INSTALL_IMAGE,$(TARGET_DIR)/boot)
 	$(call LINUX_INSTALL_DTB,$(TARGET_DIR)/boot)
+	mkdir -p $(TARGET_DIR)/boot/overlays
+	$(call LINUX_INSTALL_DTB_OVERLAYS,$(TARGET_DIR)/boot/overlays)
 endef
 endif
 
@@ -390,6 +403,8 @@ endef
 define LINUX_INSTALL_IMAGES_CMDS
 	$(call LINUX_INSTALL_IMAGE,$(BINARIES_DIR))
 	$(call LINUX_INSTALL_DTB,$(BINARIES_DIR))
+	mkdir -p $(BINARIES_DIR)/rpi-firmware/overlays
+	$(call LINUX_INSTALL_DTB_OVERLAYS,$(BINARIES_DIR)/rpi-firmware/overlays)
 endef
 
 ifeq ($(BR2_STRIP_strip),y)
