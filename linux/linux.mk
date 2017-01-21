@@ -384,8 +384,6 @@ ifeq ($(BR2_LINUX_KERNEL_INSTALL_TARGET),y)
 define LINUX_INSTALL_KERNEL_IMAGE_TO_TARGET
 	$(call LINUX_INSTALL_IMAGE,$(TARGET_DIR)/boot)
 	$(call LINUX_INSTALL_DTB,$(TARGET_DIR)/boot)
-	mkdir -p $(TARGET_DIR)/boot/overlays
-	$(call LINUX_INSTALL_DTB_OVERLAYS,$(TARGET_DIR)/boot/overlays)
 endef
 endif
 
