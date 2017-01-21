@@ -403,8 +403,8 @@ endef
 define LINUX_INSTALL_IMAGES_CMDS
 	$(call LINUX_INSTALL_IMAGE,$(BINARIES_DIR))
 	$(call LINUX_INSTALL_DTB,$(BINARIES_DIR))
-	mkdir -p $(BINARIES_DIR)/rpi-firmware/overlays
-	$(call LINUX_INSTALL_DTB_OVERLAYS,$(BINARIES_DIR)/rpi-firmware/overlays)
+	mkdir -p $(BINARIES_DIR)/overlays
+	$(call LINUX_INSTALL_DTB_OVERLAYS,$(BINARIES_DIR)/overlays)
 endef
 
 ifeq ($(BR2_STRIP_strip),y)
