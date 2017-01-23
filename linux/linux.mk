@@ -312,6 +312,7 @@ endif # BR2_LINUX_KERNEL_DTB_IS_SELF_BUILT
 
 ifeq ($(BR2_LINUX_KERNEL_DTS_OVERLAYS_SUPPORT),y)
 define LINUX_INSTALL_DTB_OVERLAYS
+	mkdir -p $(1)
 	cp $(KERNEL_ARCH_PATH)/boot/dts/overlays/*.dtbo $(1)
 endef
 endif # BR2_LINUX_KERNEL_DTS_OVERLAYS
@@ -401,7 +402,6 @@ endef
 define LINUX_INSTALL_IMAGES_CMDS
 	$(call LINUX_INSTALL_IMAGE,$(BINARIES_DIR))
 	$(call LINUX_INSTALL_DTB,$(BINARIES_DIR))
-	mkdir -p $(BINARIES_DIR)/overlays
 	$(call LINUX_INSTALL_DTB_OVERLAYS,$(BINARIES_DIR)/overlays)
 endef
 
