@@ -7,10 +7,8 @@ GENIMAGE_TMP="${BUILD_DIR}/genimage.tmp"
 
 cp board/jumpnow/${BOARD_NAME}/config.txt ${BINARIES_DIR}/config.txt
 cp board/jumpnow/${BOARD_NAME}/cmdline.txt ${BINARIES_DIR}/cmdline.txt
- 
-# Mark the kernel as DT-enabled
-${HOST_DIR}/usr/bin/mkknlimg "${BINARIES_DIR}/zImage" \
-	"${BINARIES_DIR}/kernel.img"
+
+mv ${BINARIES_DIR}/zImage ${BINARIES_DIR}/kernel.img
 
 rm -rf "${GENIMAGE_TMP}"
 
