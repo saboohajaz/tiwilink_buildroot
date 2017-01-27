@@ -1,4 +1,4 @@
-From 6f1d3cb8c2cf90a98e39ec37a995d3b24a7772bf Mon Sep 17 00:00:00 2001
+From 3ded9e2ddaca9e1eaec11c31109c336a64776fa2 Mon Sep 17 00:00:00 2001
 From: Scott Ellis <scott@jumpnowtek.com>
 Date: Thu, 26 Jan 2017 11:18:40 -0500
 Subject: [PATCH 3/3] dts: Add overlay for mcp3008 adc
@@ -44,7 +44,7 @@ index 58dd16f..11dfb51 100644
  Load:   dtoverlay=mmc,<param>=<val>
 diff --git a/arch/arm/boot/dts/overlays/mcp3008-overlay.dts b/arch/arm/boot/dts/overlays/mcp3008-overlay.dts
 new file mode 100755
-index 0000000..709f8c5
+index 0000000..06bf426
 --- /dev/null
 +++ b/arch/arm/boot/dts/overlays/mcp3008-overlay.dts
 @@ -0,0 +1,205 @@
@@ -118,8 +118,8 @@ index 0000000..709f8c5
 +		target = <&spi0>;
 +		__dormant__ {
 +			status = "okay";
-+                        #address-cells = <1>;
-+                        #size-cells = <0>;
++			#address-cells = <1>;
++			#size-cells = <0>;
 +
 +			mcp3008_00: mcp3008@0 {
 +				compatible = "mcp3008";
@@ -133,8 +133,8 @@ index 0000000..709f8c5
 +		target = <&spi0>;
 +		__dormant__ {
 +			status = "okay";
-+                        #address-cells = <1>;
-+                        #size-cells = <0>;
++			#address-cells = <1>;
++			#size-cells = <0>;
 +
 +			mcp3008_01: mcp3008@1 {
 +				compatible = "mcp3008";
@@ -148,8 +148,8 @@ index 0000000..709f8c5
 +		target = <&spi1>;
 +		__dormant__ {
 +			status = "okay";
-+                        #address-cells = <1>;
-+                        #size-cells = <0>;
++			#address-cells = <1>;
++			#size-cells = <0>;
 +
 +			mcp3008_10: mcp3008@0 {
 +				compatible = "mcp3008";
@@ -163,8 +163,8 @@ index 0000000..709f8c5
 +		target = <&spi1>;
 +		__dormant__ {
 +			status = "okay";
-+                        #address-cells = <1>;
-+                        #size-cells = <0>;
++			#address-cells = <1>;
++			#size-cells = <0>;
 +
 +			mcp3008_11: mcp3008@1 {
 +				compatible = "mcp3008";
@@ -178,8 +178,8 @@ index 0000000..709f8c5
 +		target = <&spi1>;
 +		__dormant__ {
 +			status = "okay";
-+                        #address-cells = <1>;
-+                        #size-cells = <0>;
++			#address-cells = <1>;
++			#size-cells = <0>;
 +
 +			mcp3008_12: mcp3008@2 {
 +				compatible = "mcp3008";
@@ -193,10 +193,10 @@ index 0000000..709f8c5
 +		target = <&spi2>;
 +		__dormant__ {
 +			status = "okay";
-+                        #address-cells = <1>;
-+                        #size-cells = <0>;
++			#address-cells = <1>;
++			#size-cells = <0>;
 +
-+			mcp3008_20: mcp3008@2 {
++			mcp3008_20: mcp3008@0 {
 +				compatible = "mcp3008";
 +				reg = <0>;
 +				spi-max-frequency = <1600000>;
@@ -208,10 +208,10 @@ index 0000000..709f8c5
 +		target = <&spi2>;
 +		__dormant__ {
 +			status = "okay";
-+                        #address-cells = <1>;
-+                        #size-cells = <0>;
++			#address-cells = <1>;
++			#size-cells = <0>;
 +
-+			mcp3008_21: mcp3008@2 {
++			mcp3008_21: mcp3008@1 {
 +				compatible = "mcp3008";
 +				reg = <1>;
 +				spi-max-frequency = <1600000>;
@@ -223,8 +223,8 @@ index 0000000..709f8c5
 +		target = <&spi2>;
 +		__dormant__ {
 +			status = "okay";
-+                        #address-cells = <1>;
-+                        #size-cells = <0>;
++			#address-cells = <1>;
++			#size-cells = <0>;
 +
 +			mcp3008_22: mcp3008@2 {
 +				compatible = "mcp3008";
