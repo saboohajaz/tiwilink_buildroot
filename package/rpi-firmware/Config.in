@@ -72,7 +72,8 @@ config BR2_PACKAGE_RPI_FIRMWARE_INSTALL_VCDBG
 	depends on BR2_INSTALL_LIBSTDCPP # rpi-userland
 	select BR2_PACKAGE_RPI_USERLAND
 	help
-	  Install vcdbg, to help debug communication with the GPU.
+	  Install vcdbg and vcgencmd to help debug configuration and
+	  communication with the GPU.
 
 comment "vcdbg needs a glibc toolchain w/ C++"
 	depends on !BR2_TOOLCHAIN_USES_GLIBC || !BR2_INSTALL_LIBSTDCPP
