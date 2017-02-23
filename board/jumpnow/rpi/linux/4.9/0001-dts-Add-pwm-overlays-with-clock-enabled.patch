@@ -1,6 +1,6 @@
-From 71a0ae75ff40e9493c8157add258d36e28b09cc9 Mon Sep 17 00:00:00 2001
+From 0d6e2643d535f0154e7507a7557d5509cdeea5fd Mon Sep 17 00:00:00 2001
 From: Scott Ellis <scott@jumpnowtek.com>
-Date: Mon, 19 Sep 2016 12:06:02 -0400
+Date: Thu, 23 Feb 2017 11:53:52 -0500
 Subject: [PATCH 1/3] dts: Add pwm overlays with clock enabled
 
 ---
@@ -13,23 +13,23 @@ Subject: [PATCH 1/3] dts: Add pwm overlays with clock enabled
  create mode 100644 arch/arm/boot/dts/overlays/pwm-with-clk-overlay.dts
 
 diff --git a/arch/arm/boot/dts/overlays/Makefile b/arch/arm/boot/dts/overlays/Makefile
-index b13e340..b456747 100644
+index 0a7d30c..a244f2c 100644
 --- a/arch/arm/boot/dts/overlays/Makefile
 +++ b/arch/arm/boot/dts/overlays/Makefile
-@@ -74,6 +74,8 @@ dtbo-$(RPI_DT_OVERLAYS) += pitft35-resistive.dtbo
- dtbo-$(RPI_DT_OVERLAYS) += pps-gpio.dtbo
- dtbo-$(RPI_DT_OVERLAYS) += pwm.dtbo
- dtbo-$(RPI_DT_OVERLAYS) += pwm-2chan.dtbo
-+dtbo-$(RPI_DT_OVERLAYS) += pwm-with-clk.dtbo
-+dtbo-$(RPI_DT_OVERLAYS) += pwm-2chan-with-clk.dtbo
- dtbo-$(RPI_DT_OVERLAYS) += qca7000.dtbo
- dtbo-$(RPI_DT_OVERLAYS) += raspidac3.dtbo
- dtbo-$(RPI_DT_OVERLAYS) += rpi-backlight.dtbo
+@@ -65,6 +65,8 @@ dtbo-$(CONFIG_ARCH_BCM2835) += \
+ 	pps-gpio.dtbo \
+ 	pwm.dtbo \
+ 	pwm-2chan.dtbo \
++	pwm-with-clk.dtbo \
++	pwm-2chan-with-clk.dtbo \
+ 	qca7000.dtbo \
+ 	raspidac3.dtbo \
+ 	rpi-backlight.dtbo \
 diff --git a/arch/arm/boot/dts/overlays/README b/arch/arm/boot/dts/overlays/README
-index 72601f8..11dfb51 100644
+index 46228fd..bbf397d 100644
 --- a/arch/arm/boot/dts/overlays/README
 +++ b/arch/arm/boot/dts/overlays/README
-@@ -962,6 +962,42 @@ Params: pin                     Output pin (default 18) - see table
+@@ -975,6 +975,42 @@ Params: pin                     Output pin (default 18) - see table
          clock                   PWM clock frequency (informational)
  
  
