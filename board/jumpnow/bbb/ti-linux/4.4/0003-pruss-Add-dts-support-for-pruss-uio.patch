@@ -1,13 +1,13 @@
-From 4aea959320c855877ed203aec10d63d5f98a1f48 Mon Sep 17 00:00:00 2001
+From 1437f2c11a04019741c44586d0d168a4ff05ac41 Mon Sep 17 00:00:00 2001
 From: Scott Ellis <scott@jumpnowtek.com>
 Date: Sat, 4 Mar 2017 16:33:46 -0500
-Subject: [PATCH] pruss: Add dts support for pruss-uio
+Subject: [PATCH 3/4] pruss: Add dts support for pruss-uio
 
 Cherry-picked from beagleboard-linux
 
   Subject: [PATCH 058/100] pruss: choose rproc or uio
 
-but removal of bbb pinctrl muxing.
+With removal of beaglebone project specific pinctrl code.
 ---
  .../devicetree/bindings/arm/omap/omap.txt          |  2 +
  arch/arm/boot/dts/am33xx-pruss-rproc.dtsi          | 75 +++++++++++++++++++++
@@ -35,7 +35,7 @@ index 6071ba2..4037b8e 100644
  
 diff --git a/arch/arm/boot/dts/am33xx-pruss-rproc.dtsi b/arch/arm/boot/dts/am33xx-pruss-rproc.dtsi
 new file mode 100644
-index 0000000..ec5cf17
+index 0000000..9d0f73d
 --- /dev/null
 +++ b/arch/arm/boot/dts/am33xx-pruss-rproc.dtsi
 @@ -0,0 +1,75 @@
@@ -60,7 +60,7 @@ index 0000000..ec5cf17
 +			      <0x4a310000 0x3000>,
 +			      <0x4a326000 0x2000>,
 +			      <0x4a32e000 0x31c>,
-+		       	      <0x4a332000 0x58>;
++			      <0x4a332000 0x58>;
 +			reg-names = "dram0", "dram1", "shrdram2", "cfg",
 +			            "iep", "mii_rt";
 +			#address-cells = <1>;
