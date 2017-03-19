@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-RPI_FIRMWARE_VERSION = 509beaab0e102cf6decf209922669700c9ac5576
+RPI_FIRMWARE_VERSION = 384559354762f36aa55584560d8749fc66a4cfd0
 RPI_FIRMWARE_SITE = $(call github,raspberrypi,firmware,$(RPI_FIRMWARE_VERSION))
 RPI_FIRMWARE_LICENSE = BSD-3c
 RPI_FIRMWARE_LICENSE_FILES = boot/LICENCE.broadcom
@@ -33,6 +33,8 @@ define RPI_FIRMWARE_INSTALL_TARGET_CMDS
 		$(TARGET_DIR)/usr/sbin/vcdbg
 	$(INSTALL) -D -m 0700 $(@D)/$(if BR2_ARM_EABIHF,hardfp/)opt/vc/bin/vcgencmd \
 		$(TARGET_DIR)/usr/sbin/vcgencmd
+	$(INSTALL) -D -m 0700 $(@D)/$(if BR2_ARM_EABIHF,hardfp/)opt/vc/lib/libelftoolchain.so \
+		$(TARGET_DIR)/usr/lib/libelftoolchain.so
 endef
 endif # INSTALL_VCDBG
 
