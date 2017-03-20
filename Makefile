@@ -86,7 +86,7 @@ else # umask / $(CURDIR) / $(O)
 all:
 
 # Set and export the version string
-export BR2_VERSION := 2017.02
+export BR2_VERSION := 2017.05-git
 # Actual time the release is cut (for reproducible builds)
 BR2_VERSION_EPOCH = 1488315000
 
@@ -1067,6 +1067,9 @@ release:
 
 print-version:
 	@echo $(BR2_VERSION_FULL)
+
+.gitlab-ci.yml: .gitlab-ci.yml.in configs/*_defconfig
+	(cd configs; LC_ALL=C ls -1 *_defconfig) | sed 's/$$/: *defconfig/' | cat $< - > $@
 
 include docs/manual/manual.mk
 -include $(foreach dir,$(BR2_EXTERNAL_DIRS),$(dir)/docs/*/*.mk)

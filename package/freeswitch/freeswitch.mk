@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-FREESWITCH_VERSION = 1.6.14
+FREESWITCH_VERSION = 1.6.15
 FREESWITCH_SOURCE = freeswitch-$(FREESWITCH_VERSION).tar.xz
 FREESWITCH_SITE = http://files.freeswitch.org/freeswitch-releases
 FREESWITCH_LICENSE = MPLv1.1, \
@@ -36,6 +36,10 @@ FREESWITCH_DEPENDENCIES = \
 	sqlite \
 	util-linux \
 	zlib
+
+# disable display of ClueCon banner in fs_cli
+FREESWITCH_CONF_ENV += \
+	disable_cc=yes
 
 # we neither need host-perl nor host-php
 FREESWITCH_CONF_ENV += \
