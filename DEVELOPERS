@@ -162,6 +162,7 @@ F:	package/exim/
 F:	package/fetchmail/
 F:	package/freeswitch/
 F:	package/ffmpeg/
+F:	package/ghostscript/
 F:	package/giflib/
 F:	package/glmark2/
 F:	package/jsoncpp/
@@ -612,6 +613,8 @@ F:	package/liquid-dsp/
 
 N:	Guo Ren <ren_guo@c-sky.com>
 F:	arch/Config.in.csky
+F:	board/csky/
+F:	configs/csky_*
 
 N:	Gustavo Zacarias <gustavo@zacarias.com.ar>
 F:	arch/Config.in.powerpc
