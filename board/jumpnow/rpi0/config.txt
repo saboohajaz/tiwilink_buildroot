@@ -1186,3 +1186,5 @@ disable_overscan=0
 ##
 #dtparam=pwr_led_gpio=35
 
+enable_uart=1
+
