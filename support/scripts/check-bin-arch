@@ -18,12 +18,21 @@ fi
 
 exitcode=0
 
-pkg_files=$(sed -r -e "/^${package},(.+)$/!d; s//\1/;" ${pkg_list})
+# Only split on new lines, for filenames-with-spaces
+IFS="
+"
 
-for f in ${pkg_files} ; do
+while read f; do
 	# Skip firmware files, they could be ELF files for other
 	# architectures
-	if [[ "${f}" =~ ^\./(usr/)?lib/firmware/.* ]]; then
+	if [[ "${f}" =~ ^/(usr/)?lib/firmware/.* ]]; then
+		continue
+	fi
+
+	# Skip files in /usr/share, several packages (qemu,
+	# pru-software-support) legitimately install ELF binaries that
+	# are not for the target architecture
+	if [[ "${f}" =~ ^/usr/share/.* ]]; then
 		continue
 	fi
 
@@ -43,10 +52,10 @@ for f in ${pkg_files} ; do
 		continue
 	fi
 
-	printf 'ERROR: architecture for %s is %s, should be %s\n' \
+	printf 'ERROR: architecture for "%s" is "%s", should be "%s"\n' \
 	       "${f}" "${arch}" "${arch_name}"
 
 	exitcode=1
-done
+done < <( sed -r -e "/^${package},\.(.+)$/!d; s//\1/;" ${pkg_list} )
 
 exit ${exitcode}
