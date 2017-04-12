@@ -104,6 +104,7 @@ N:	Arnaud Aujon <arnaud@intelibre.fr>
 F:	package/espeak/
 
 N:	Arnout Vandecappelle <arnout@mind.be>
+F:	package/arp-scan/
 F:	package/freescale-imx/firmware-imx/
 F:	package/freescale-imx/imx-lib/
 F:	package/gstreamer/gst-fsl-plugins/
@@ -127,7 +128,7 @@ F:	package/luasec/
 F:	package/lua-ev/
 F:	package/orbit/
 
-N:	Bartosz Golaszewski <bgolaszewski@baylibre.com>
+N:	Bartosz Golaszewski <brgl@bgdev.pl>
 F:	package/autoconf-archive/
 F:	package/doxygen/
 F:	package/libgpiod/
@@ -150,12 +151,14 @@ N:	Benjamin Kamath <kamath.ben@gmail.com>
 F:	package/lapack/
 
 N:	Benoît Allard <benoit.allard@greenbone.net>
+F:	boot/syslinux/
 F:	package/dc3dd/
 
 N:	Bernd Kuhls <bernd.kuhls@t-online.de>
 F:	package/apache/
 F:	package/apr/
 F:	package/apr-util/
+F:	package/bluez-tools/
 F:	package/clamav/
 F:	package/dovecot/
 F:	package/dovecot-pigeonhole/
@@ -247,6 +250,7 @@ F:	package/perl-timedate/
 F:	package/perl-uri/
 F:	package/perl-www-robotrules/
 F:	package/pixman/
+F:	package/pngquant/
 F:	package/pound/
 F:	package/pure-ftpd/
 F:	package/python-couchdb/
@@ -508,6 +512,7 @@ F:	package/netsurf-buildsystem/
 N:	Fabrice Fontaine <fabrice.fontaine@orange.com>
 F:	package/domoticz/
 F:	package/libmediaart/
+F:	package/libmaxminddb/
 F:	package/openzwave/
 
 N:	Fabrice Fontaine <fontaine.fabrice@gmail.com>
@@ -520,8 +525,10 @@ F:	package/gssdp/
 F:	package/gupnp/
 F:	package/gupnp-dlna/
 F:	package/gupnp-tools/
+F:	package/hiredis/
 F:	package/igd2-for-linux/
 F:	package/minissdpd/
+F:	package/motion/
 F:	package/tinycbor/
 F:	package/tinydtls/
 
@@ -905,6 +912,9 @@ F:	package/qt5/
 N:	Julien Floret <julien.floret@6wind.com>
 F:	package/lldpd/
 
+N:	Julien Viard de Galbert <julien@vdg.name>
+F:	package/dieharder/
+
 N:	Justin Maggard <jmaggard@netgear.com>
 F:	package/dtach/
 
@@ -1282,7 +1292,7 @@ F:	package/paho-mqtt-c/
 N:	Qais Yousef <Qais.Yousef@imgtec.com>
 F:	package/bellagio/
 
-N:	Rahul Bedarkar <rahul.bedarkar@imgtec.com>
+N:	Rahul Bedarkar <rahulbedarkar89@gmail.com>
 F:	package/cxxtest/
 F:	package/gflags/
 F:	package/glog/
@@ -1302,6 +1312,9 @@ F:	package/atop/
 
 N:	Rhys Williams <github@wilberforce.co.nz>
 F:	package/lirc-tools/
+
+N:	Ricardo Martincoski <ricardo.martincoski@gmail.com>
+F:	support/scripts/check*package*
 
 N:	Richard Braun <rbraun@sceen.net>
 F:	package/curlftpfs/
@@ -1401,6 +1414,9 @@ F:	package/cppunit/
 F:	package/kyua/
 F:	package/lutok/
 F:	package/yaml-cpp/
+
+N:	Semyon Kolganov <semenak94@mail.ru>
+F:	package/fmt/
 
 N:	Sergio Prado <sergio.prado@e-labworks.com>
 F:	package/libgdiplus/

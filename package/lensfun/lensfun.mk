@@ -6,7 +6,7 @@
 
 LENSFUN_VERSION = 0.3.2
 LENSFUN_SITE = https://sourceforge.net/projects/lensfun/files/$(LENSFUN_VERSION)
-LENSFUN_LICENSE = LGPLv3+ (libraries), GPLv3+ (programs)
+LENSFUN_LICENSE = LGPL-3.0+ (libraries), GPL-3.0+ (programs)
 LENSFUN_LICENSE_FILES = docs/gpl-3.0.txt docs/lgpl-3.0.txt
 LENSFUN_INSTALL_STAGING = YES
 LENSFUN_DEPENDENCIES = libglib2
@@ -32,6 +32,12 @@ LENSFUN_CONF_OPTS += -DBUILD_LENSTOOL=ON
 # broken
 else
 LENSFUN_CONF_OPTS += -DBUILD_LENSTOOL=OFF
+endif
+
+ifeq ($(BR2_STATIC_LIBS),y)
+LENSFUN_CONF_OPTS += -DBUILD_STATIC=ON
+else
+LENSFUN_CONF_OPTS += -DBUILD_STATIC=OFF
 endif
 
 # Don't install helper scripts (which require python3 and gksudo).

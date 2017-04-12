@@ -21,7 +21,7 @@ QT_PATCH = https://github.com/qtproject/qtbase/commit/b8f98d956501dfa4ce03a137f1
 QT_DEPENDENCIES = host-pkgconf
 QT_INSTALL_STAGING = YES
 
-QT_LICENSE := LGPLv2.1 with exceptions or GPLv3
+QT_LICENSE := LGPL-2.1 with exceptions or GPL-3.0
 ifneq ($(BR2_PACKAGE_QT_LICENSE_APPROVED),y)
 QT_LICENSE := $(QT_LICENSE) or Digia Qt Commercial license
 endif
@@ -78,7 +78,6 @@ QT_DEPENDENCIES += libglib2
 else
 QT_CONFIGURE_OPTS += -no-glib
 endif
-
 
 ### Pixel depths
 QT_PIXEL_DEPTHS = # empty
@@ -546,7 +545,6 @@ endef
 define QT_BUILD_CMDS
 	$(TARGET_MAKE_ENV) $(MAKE) -C $(@D)
 endef
-
 
 # Build the list of libraries and plugins to install to the target
 

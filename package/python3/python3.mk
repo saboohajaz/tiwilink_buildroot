@@ -8,7 +8,7 @@ PYTHON3_VERSION_MAJOR = 3.6
 PYTHON3_VERSION = $(PYTHON3_VERSION_MAJOR).1
 PYTHON3_SOURCE = Python-$(PYTHON3_VERSION).tar.xz
 PYTHON3_SITE = http://python.org/ftp/python/$(PYTHON3_VERSION)
-PYTHON3_LICENSE = Python software foundation license v2, others
+PYTHON3_LICENSE = Python-2.0, others
 PYTHON3_LICENSE_FILES = LICENSE
 
 # Python itself doesn't use libtool, but it includes the source code
@@ -247,9 +247,10 @@ endif
 define PYTHON3_CREATE_PYC_FILES
 	$(PYTHON3_FIX_TIME)
 	PYTHONPATH="$(PYTHON3_PATH)" \
-	$(HOST_DIR)/usr/bin/python$(PYTHON3_VERSION_MAJOR) \
-		support/scripts/pycompile.py $(if $(BR2_REPRODUCIBLE),--force) \
-		$(TARGET_DIR)/usr/lib/python$(PYTHON3_VERSION_MAJOR)
+	cd $(TARGET_DIR) && $(HOST_DIR)/usr/bin/python$(PYTHON3_VERSION_MAJOR) \
+		$(TOPDIR)/support/scripts/pycompile.py \
+		$(if $(BR2_REPRODUCIBLE),--force) \
+		usr/lib/python$(PYTHON3_VERSION_MAJOR)
 endef
 
 ifeq ($(BR2_PACKAGE_PYTHON3_PYC_ONLY)$(BR2_PACKAGE_PYTHON3_PY_PYC),y)

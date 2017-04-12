@@ -4,8 +4,8 @@
 #
 ################################################################################
 
-DOCKER_ENGINE_VERSION = v17.03.0-ce
-DOCKER_ENGINE_COMMIT = 60ccb2265b0574d6c1c1090876a1d1ab32bed60e
+DOCKER_ENGINE_VERSION = v17.04.0-ce
+DOCKER_ENGINE_COMMIT = 4845c567eb35d68f35b0b1713a09b0c8d47fe67e
 DOCKER_ENGINE_SITE = $(call github,docker,docker,$(DOCKER_ENGINE_VERSION))
 
 DOCKER_ENGINE_LICENSE = Apache-2.0
@@ -33,7 +33,6 @@ ifeq ($(BR2_PACKAGE_DOCKER_ENGINE_STATIC_CLIENT),y)
 DOCKER_ENGINE_GLDFLAGS_DOCKER += -extldflags '-static'
 endif
 endif
-
 
 DOCKER_ENGINE_BUILD_TAGS = cgo exclude_graphdriver_zfs autogen
 DOCKER_ENGINE_BUILD_TARGETS = docker

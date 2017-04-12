@@ -5,7 +5,7 @@
 ################################################################################
 
 # When updating the version, please also update mesa3d-headers
-MESA3D_VERSION = 17.0.2
+MESA3D_VERSION = 17.0.3
 MESA3D_SOURCE = mesa-$(MESA3D_VERSION).tar.xz
 MESA3D_SITE = https://mesa.freedesktop.org/archive
 MESA3D_LICENSE = MIT, SGI, Khronos
@@ -21,6 +21,9 @@ MESA3D_DEPENDENCIES = \
 	host-flex \
 	expat \
 	libdrm
+
+# Disable assembly usage.
+MESA3D_CONF_OPTS = --disable-asm
 
 # The Sourcery MIPS toolchain has a special (non-upstream) feature to
 # have "compact exception handling", which unfortunately breaks with
@@ -74,11 +77,13 @@ MESA3D_VULKAN_DRIVERS-$(BR2_PACKAGE_MESA3D_VULKAN_DRIVER_INTEL)   += intel
 
 ifeq ($(BR2_PACKAGE_MESA3D_GALLIUM_DRIVER),)
 MESA3D_CONF_OPTS += \
-	--without-gallium-drivers
+	--without-gallium-drivers \
+	--disable-gallium-extra-hud
 else
 MESA3D_CONF_OPTS += \
 	--enable-shared-glapi \
-	--with-gallium-drivers=$(subst $(space),$(comma),$(MESA3D_GALLIUM_DRIVERS-y))
+	--with-gallium-drivers=$(subst $(space),$(comma),$(MESA3D_GALLIUM_DRIVERS-y)) \
+	--enable-gallium-extra-hud
 endif
 
 ifeq ($(BR2_PACKAGE_MESA3D_DRI_DRIVER),)
@@ -167,6 +172,27 @@ MESA3D_PROVIDES += libgles
 MESA3D_CONF_OPTS += --enable-gles1 --enable-gles2
 else
 MESA3D_CONF_OPTS += --disable-gles1 --disable-gles2
+endif
+
+ifeq ($(BR2_PACKAGE_MESA3D_OPENGL_TEXTURE_FLOAT),y)
+MESA3D_CONF_OPTS += --enable-texture-float
+MESA3D_LICENSE_FILES += docs/patents.txt
+else
+MESA3D_CONF_OPTS += --disable-texture-float
+endif
+
+ifeq ($(BR2_PACKAGE_XLIB_LIBXVMC),y)
+MESA3D_DEPENDENCIES += xlib_libXvMC
+MESA3D_CONF_OPTS += --enable-xvmc
+else
+MESA3D_CONF_OPTS += --disable-xvmc
+endif
+
+ifeq ($(BR2_PACKAGE_LIBVDPAU),y)
+MESA3D_DEPENDENCIES += libvdpau
+MESA3D_CONF_OPTS += --enable-vdpau
+else
+MESA3D_CONF_OPTS += --disable-vdpau
 endif
 
 ifeq ($(BR2_PACKAGE_LM_SENSORS),y)

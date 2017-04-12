@@ -8,7 +8,7 @@ MPLAYER_VERSION = 1.3.0
 MPLAYER_SOURCE = MPlayer-$(MPLAYER_VERSION).tar.xz
 MPLAYER_SITE = http://www.mplayerhq.hu/MPlayer/releases
 MPLAYER_DEPENDENCIES = host-pkgconf
-MPLAYER_LICENSE = GPLv2
+MPLAYER_LICENSE = GPL-2.0
 MPLAYER_LICENSE_FILES = LICENSE Copyright
 MPLAYER_CFLAGS = $(TARGET_CFLAGS)
 MPLAYER_LDFLAGS = $(TARGET_LDFLAGS)
@@ -285,10 +285,13 @@ MPLAYER_CFLAGS += -mfpu=neon
 endif
 endif
 
+define MPLAYER_DISABLE_INLINE_ASM
+	$(SED) 's,#define HAVE_INLINE_ASM 1,#define HAVE_INLINE_ASM 0,g' \
+		$(@D)/config.h
+endef
+
 ifeq ($(BR2_i386),y)
-# inline asm breaks with "can't find a register in class 'GENERAL_REGS'"
-# inless we free up ebp
-MPLAYER_CFLAGS += -fomit-frame-pointer
+MPLAYER_POST_CONFIGURE_HOOKS += MPLAYER_DISABLE_INLINE_ASM
 endif
 
 ifeq ($(BR2_X86_CPU_HAS_MMX),y)
