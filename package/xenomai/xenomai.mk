@@ -23,6 +23,24 @@ XENOMAI_INSTALL_STAGING_OPTS = DESTDIR=$(STAGING_DIR) install-user
 
 XENOMAI_CONF_OPTS += --includedir=/usr/include/xenomai/ --disable-doc-install
 
+ifeq ($(BR2_PACKAGE_XENOMAI_MERCURY),y)
+XENOMAI_CONF_OPTS += --with-core=mercury
+else
+XENOMAI_CONF_OPTS += --with-core=cobalt
+endif
+
+ifeq ($(BR2_PACKAGE_XENOMAI_ENABLE_SMP),y)
+XENOMAI_CONF_OPTS += --enable-smp
+else
+XENOMAI_CONF_OPTS += --disable-smp
+endif
+
+# Obstack support in Xenomai is broken when the libc doesn't support
+# obstack support itself. Make sure we disable obstack support for all
+# libc since it was removed in uClibc-ng since 1.0.21 release and it's
+# always disabled with Glibc.
+XENOMAI_CONF_OPTS += CFLAGS="$(TARGET_CFLAGS) -DELIDE_CODE"
+
 define XENOMAI_REMOVE_DEVFILES
 	for i in xeno-config xeno-info wrap-link.sh ; do \
 		rm -f $(TARGET_DIR)/usr/bin/$$i ; \

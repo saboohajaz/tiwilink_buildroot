@@ -504,6 +504,7 @@ F:	configs/mx6sx_udoo_neo_defconfig
 F:	configs/mx6udoo_defconfig
 F:	configs/wandboard_defconfig
 F:	configs/warp7_defconfig
+F:	package/atest/
 F:	package/kmscube/
 
 N:	Fabio Porcedda <fabio.porcedda@gmail.com>
@@ -957,6 +958,9 @@ F:	package/cpuload/
 F:	package/bwm-ng/
 F:	package/ramsmp/
 
+N:	Kevin Joly <kevin.joly@sensefly.com>
+F:	package/libgphoto2/
+
 N:	Laurent Cans <laurent.cans@gmail.com>
 F:	package/aircrack-ng/
 
@@ -1344,6 +1348,7 @@ F:	package/mcelog/
 F:	package/openpowerlink/
 F:	package/physfs/
 F:	package/stress-ng/
+F:	package/supertux/
 F:	package/terminology/
 F:	package/upower/
 F:	package/xenomai/
@@ -1417,6 +1422,8 @@ F:	package/yaml-cpp/
 
 N:	Semyon Kolganov <semenak94@mail.ru>
 F:	package/fmt/
+F:	package/libbson/
+F:	package/mpir/
 
 N:	Sergio Prado <sergio.prado@e-labworks.com>
 F:	package/libgdiplus/
@@ -1739,6 +1746,7 @@ F:	package/linux-firmware/
 F:	package/modem-manager/
 F:	package/nuttcp/
 F:	package/parted/
+F:	package/phytool/
 F:	package/python*
 F:	package/ser2net/
 F:	package/socketcand/

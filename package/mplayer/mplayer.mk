@@ -288,6 +288,10 @@ endif
 define MPLAYER_DISABLE_INLINE_ASM
 	$(SED) 's,#define HAVE_INLINE_ASM 1,#define HAVE_INLINE_ASM 0,g' \
 		$(@D)/config.h
+	$(SED) 's,#define HAVE_MMX_INLINE 1,#define HAVE_MMX_INLINE 0,g' \
+		$(@D)/config.h
+	$(SED) 's,#define HAVE_MMX_EXTERNAL 1,#define HAVE_MMX_EXTERNAL 0,g' \
+		$(@D)/config.h
 endef
 
 ifeq ($(BR2_i386),y)
@@ -306,9 +310,9 @@ MPLAYER_CONF_OPTS += \
 endif
 
 ifeq ($(BR2_X86_CPU_HAS_SSE),y)
-MPLAYER_CONF_OPTS += --enable-sse
+MPLAYER_CONF_OPTS += --enable-mmxext --enable-sse
 else
-MPLAYER_CONF_OPTS += --disable-sse
+MPLAYER_CONF_OPTS += --disable-mmxext --disable-sse
 endif
 
 ifeq ($(BR2_X86_CPU_HAS_SSE2),y)
