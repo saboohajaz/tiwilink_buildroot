@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-MPV_VERSION = 0.23.0
+MPV_VERSION = 0.24.0
 MPV_SITE = https://github.com/mpv-player/mpv/archive
 MPV_SOURCE = v$(MPV_VERSION).tar.gz
 MPV_DEPENDENCIES = \
@@ -23,6 +23,7 @@ MPV_CONF_OPTS = \
 	--disable-cdda \
 	--disable-cocoa \
 	--disable-coreaudio \
+	--disable-cuda-hwaccel \
 	--disable-libv4l2 \
 	--disable-opensles \
 	--disable-rpi \

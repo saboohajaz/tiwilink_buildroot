@@ -6,7 +6,7 @@
 
 XENOMAI_VERSION = $(call qstrip,$(BR2_PACKAGE_XENOMAI_VERSION))
 ifeq ($(XENOMAI_VERSION),)
-XENOMAI_VERSION = 3.0.3
+XENOMAI_VERSION = 3.0.4
 else
 BR_NO_CHECK_HASH_FOR += $(XENOMAI_SOURCE)
 endif
@@ -16,6 +16,11 @@ XENOMAI_SOURCE = xenomai-$(XENOMAI_VERSION).tar.bz2
 XENOMAI_LICENSE = GPL-2.0+ with exception (headers), LGPL-2.1+ (libraries), GPL-2.0+ (kernel), GFDL-1.2+ (docs), GPL-2.0 (ipipe patch, can driver)
 # GFDL is not included but refers to gnu.org
 XENOMAI_LICENSE_FILES = debian/copyright include/COPYING lib/trank/COPYING kernel/cobalt/COPYING
+
+XENOMAI_DEPENDENCIES = host-pkgconf
+
+# 0002-boilerplate-build-obstack-support-conditionally.patch
+XENOMAI_AUTORECONF = YES
 
 XENOMAI_INSTALL_STAGING = YES
 XENOMAI_INSTALL_TARGET_OPTS = DESTDIR=$(TARGET_DIR) install-user
@@ -34,12 +39,6 @@ XENOMAI_CONF_OPTS += --enable-smp
 else
 XENOMAI_CONF_OPTS += --disable-smp
 endif
-
-# Obstack support in Xenomai is broken when the libc doesn't support
-# obstack support itself. Make sure we disable obstack support for all
-# libc since it was removed in uClibc-ng since 1.0.21 release and it's
-# always disabled with Glibc.
-XENOMAI_CONF_OPTS += CFLAGS="$(TARGET_CFLAGS) -DELIDE_CODE"
 
 define XENOMAI_REMOVE_DEVFILES
 	for i in xeno-config xeno-info wrap-link.sh ; do \
