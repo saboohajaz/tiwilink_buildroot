@@ -71,6 +71,10 @@ F:	package/openal/
 F:	package/p7zip/
 F:	package/wine/
 
+N:	Andrey Smirnov <andrew.smirnov@gmail.com
+F:	package/python-decorator/
+F:	package/python-simplegeneric/
+
 N:	Andrew Ruder <andrew.ruder@elecsyscorp.com>
 F:	package/expect/
 
@@ -140,6 +144,7 @@ F:	package/pulseview/
 F:	package/sigrok-cli/
 
 N:	Baruch Siach <baruch@tkos.co.il>
+F:	package/daemon/
 F:	package/ebtables/
 F:	package/openipmi/
 F:	package/ti-uim/
@@ -412,6 +417,9 @@ F:	package/openldap/
 
 N:	David du Colombier <0intro@gmail.com>
 F:	package/x264/
+
+N:	David Graziano <david.graziano@rockwellcollins.com>
+F:	package/libcsv/
 
 N:	David Lechner <david@lechnology.com>
 F:	board/lego/ev3/
@@ -1067,6 +1075,7 @@ F:	package/fmc/
 F:	package/fmlib/
 F:	package/igmpproxy/
 F:	package/iputils/
+F:	package/libcsv/
 F:	package/omniorb/
 F:	package/python-ipy/
 F:	package/python-posix-ipc/
@@ -1425,6 +1434,7 @@ F:	package/yaml-cpp/
 N:	Semyon Kolganov <semenak94@mail.ru>
 F:	package/fmt/
 F:	package/libbson/
+F:	package/lua-resty-http/
 F:	package/mpir/
 
 N:	Sergio Prado <sergio.prado@e-labworks.com>
