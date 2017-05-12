@@ -1,12 +1,23 @@
-RPI_WIFI_FIRMWARE_VERSION = a7491de4c4b2f1ceb5d0dfa5350b95e5c6fb9bd4
-RPI_WIFI_FIRMWARE_SITE = $(call github,RPi-Distro,firmware-nonfree,$(RPI_WIFI_FIRMWARE_VERSION))
-RPI_WIFI_FIRMWARE_LICENSE = Proprietary
-RPI_WIFI_FIRMWARE_LICENSE_FILES = brcm80211/LICENSE
+################################################################################
+#
+# rpi-wifi-firmware
+#
+################################################################################
+
+RPI_WIFI_FIRMWARE_VERSION = 54bab3d6a6d43239c71d26464e6e10e5067ffea7
+# brcmfmac43430-sdio.bin comes from linux-firmware
+RPI_WIFI_FIRMWARE_SOURCE = brcmfmac43430-sdio.txt
+# git repo contains a lot of unrelated files
+RPI_WIFI_FIRMWARE_SITE = https://raw.githubusercontent.com/RPi-Distro/firmware-nonfree/$(RPI_WIFI_FIRMWARE_VERSION)/brcm80211/brcm
+RPI_WIFI_FIRMWARE_LICENSE = PROPRIETARY
+
+define RPI_WIFI_FIRMWARE_EXTRACT_CMDS
+	cp $(DL_DIR)/$($(PKG)_SOURCE) $(@D)/
+endef
 
 define RPI_WIFI_FIRMWARE_INSTALL_TARGET_CMDS
-	$(INSTALL) -D -m 0644 $(@D)/brcm80211/brcm/brcmfmac43143.bin $(TARGET_DIR)/lib/firmware/brcm/brcmfmac43143.bin
-	$(INSTALL) -D -m 0644 $(@D)/brcm80211/brcm/brcmfmac43430-sdio.bin $(TARGET_DIR)/lib/firmware/brcm/brcmfmac43430-sdio.bin
-	$(INSTALL) -D -m 0644 $(@D)/brcm80211/brcm/brcmfmac43430-sdio.txt $(TARGET_DIR)/lib/firmware/brcm/brcmfmac43430-sdio.txt
+	$(INSTALL) -D -m 0644 $(@D)/$(RPI_WIFI_FIRMWARE_SOURCE) \
+		$(TARGET_DIR)/lib/firmware/brcm/$(RPI_WIFI_FIRMWARE_SOURCE)
 endef
- 
+
 $(eval $(generic-package))
