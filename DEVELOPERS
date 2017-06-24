@@ -33,6 +33,7 @@ N:	Adam Duskett <aduskett@gmail.com>
 F:	package/audit/
 F:	package/checkpolicy/
 F:	package/gstreamer1/gst1-vaapi/
+F:	package/janus-gateway/
 F:	package/libselinux/
 F:	package/libsemanage/
 F:	package/libsepol/
@@ -63,6 +64,10 @@ F:	package/liblog4c-localtime/
 
 N:	Alexandre Belloni <alexandre.belloni@free-electrons.com>
 F:	package/tz/
+
+N:	Alexandre Esse <alexandre.esse.dev@gmail.com>
+F:	package/kvazaar/
+F:	package/v4l2loopback/
 
 N:	Alistair Francis <alistair.francis@xilinx.com>
 F:	package/xen/
@@ -332,6 +337,10 @@ F:	package/dvbsnoop/
 F:	package/libdvbsi/
 F:	package/libsvg/
 F:	package/libsvg-cairo/
+
+N:	Chakra Divi <chakra@openedev.com>
+F:	board/olimex/a13_olinuxino
+F:	configs/olimex_a13_olinuxino_defconfig
 
 N:	Chris Packham <judge.packham@gmail.com>
 F:	package/eventlog/
@@ -834,7 +843,8 @@ F:	package/keepalived/
 
 N:	Jagan Teki <jagan@amarulasolutions.com>
 F:	board/engicam/
-F:	configs/engicam_imx6q_icore_defconfig
+F:	configs/engicam_imx6qdl_icore_defconfig
+F:	configs/engicam_imx6qdl_icore_rqs_defconfig
 
 N:	James Knight <james.knight@rockwellcollins.com>
 F:	package/atkmm/
@@ -994,6 +1004,9 @@ F:	package/ramsmp/
 N:	Kevin Joly <kevin.joly@sensefly.com>
 F:	package/libgphoto2/
 
+N:	Koen Martens <gmc@sonologic.nl>
+F:	package/linuxconsoletools/
+
 N:	Laurent Cans <laurent.cans@gmail.com>
 F:	package/aircrack-ng/
 
@@ -1057,7 +1070,9 @@ N:	Marcin Niestroj <m.niestroj@grinn-global.com>
 F:	board/grinn/
 F:	configs/grinn_*
 F:	package/argparse/
+F:	package/dt-utils/
 F:	package/easydbus/
+F:	package/lua-flu/
 F:	package/luaossl/
 F:	package/rs485conf/
 F:	package/turbolua/
@@ -1477,6 +1492,9 @@ F:	package/fmt/
 F:	package/libbson/
 F:	package/lua-resty-http/
 F:	package/mpir/
+
+N:	Sergey Matyukevich <geomatsi@gmail.com>
+F:	package/xr819-xradio/
 
 N:	Sergio Prado <sergio.prado@e-labworks.com>
 F:	package/libgdiplus/
