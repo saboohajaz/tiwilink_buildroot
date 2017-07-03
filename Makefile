@@ -811,7 +811,14 @@ check-dependencies:
 
 else # ifeq ($(BR2_HAVE_DOT_CONFIG),y)
 
-all: menuconfig
+# Some subdirectories are also package names. To avoid that "make linux"
+# on an unconfigured tree produces "Nothing to be done", add an explicit
+# rule for it.
+# Also for 'all' we error out and ask the user to configure first.
+.PHONY: linux toolchain
+linux toolchain all:
+	$(error Please configure Buildroot first (e.g. "make menuconfig"))
+	@exit 1
 
 endif # ifeq ($(BR2_HAVE_DOT_CONFIG),y)
 
@@ -1098,8 +1105,11 @@ release:
 print-version:
 	@echo $(BR2_VERSION_FULL)
 
-.gitlab-ci.yml: .gitlab-ci.yml.in configs/*_defconfig
-	(cd configs; LC_ALL=C ls -1 *_defconfig) | sed 's/$$/: *defconfig/' | cat $< - > $@
+.PHONY: .gitlab-ci.yml
+.gitlab-ci.yml: .gitlab-ci.yml.in
+	cp $< $@
+	(cd configs; LC_ALL=C ls -1 *_defconfig) | sed 's/$$/: *defconfig/' >> $@
+	./support/testing/run-tests -l 2>&1 | sed -r -e '/^test_run \((.*)\).*/!d; s//\1: *runtime_test/' | LC_ALL=C sort >> $@
 
 include docs/manual/manual.mk
 -include $(foreach dir,$(BR2_EXTERNAL_DIRS),$(dir)/docs/*/*.mk)
