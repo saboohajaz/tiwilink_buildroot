@@ -34,6 +34,7 @@ F:	package/audit/
 F:	package/checkpolicy/
 F:	package/gstreamer1/gst1-vaapi/
 F:	package/janus-gateway/
+F:	package/libressl/
 F:	package/libselinux/
 F:	package/libsemanage/
 F:	package/libsepol/
@@ -44,6 +45,9 @@ F:	package/refpolicy/
 F:	package/sepolgen/
 F:	package/setools/
 F:	package/sngrep/
+
+N:	Adrian Perez de Castro <aperez@igalia.com>
+F:	package/webkitgtk/
 
 N:	Alex Suykov <alex.suykov@gmail.com>
 F:	package/vboot-utils/
@@ -249,6 +253,7 @@ F:	package/libsquish/
 F:	package/liburiparser/
 F:	package/libva/
 F:	package/libva-intel-driver/
+F:	package/libva-utils/
 F:	package/libvorbis/
 F:	package/libvpx/
 F:	package/libyuv/
@@ -343,8 +348,10 @@ F:	package/libsvg/
 F:	package/libsvg-cairo/
 
 N:	Chakra Divi <chakra@openedev.com>
+F:	board/friendlyarm/nanopi-m1
 F:	board/olimex/a13_olinuxino
 F:	board/orangepi/orangepi-plus
+F:	configs/nanopi_m1_defconfig
 F:	configs/olimex_a13_olinuxino_defconfig
 F:	configs/orangepi_plus_defconfig
 
@@ -969,6 +976,7 @@ F:	package/lldpd/
 
 N:	Julien Viard de Galbert <julien@vdg.name>
 F:	package/dieharder/
+F:	package/easy-rsa/
 
 N:	Justin Maggard <jmaggard@netgear.com>
 F:	package/dtach/
@@ -1084,6 +1092,7 @@ F:	package/argparse/
 F:	package/dt-utils/
 F:	package/easydbus/
 F:	package/lua-flu/
+F:	package/lua-stdlib/
 F:	package/luaossl/
 F:	package/rs485conf/
 F:	package/turbolua/
@@ -1716,9 +1725,10 @@ F:	package/openmpi/
 F:	package/pinentry/
 F:	package/trinity/
 
-N:	Vincent Stehlé <vincent.stehle@intel.com>
+N:	Vincent Stehlé <vincent.stehle@laposte.net>
 F:	package/i7z/
 F:	package/msr-tools/
+F:	package/pixz/
 
 N:	Vinicius Tinti <viniciustinti@gmail.com>
 F:	package/python-thrift/
@@ -1779,7 +1789,6 @@ F:	package/libiscsi/
 F:	package/libseccomp/
 F:	package/linux-tools/
 F:	package/mesa3d-headers/
-F:	package/mke2img/
 F:	package/nbd/
 F:	package/nut/
 F:	package/nvidia-driver/
