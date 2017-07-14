@@ -1239,6 +1239,9 @@ N:	Murat Demirten <mdemirten@yh.com.tr>
 F:	package/jpeg-turbo/
 F:	package/libgeotiff/
 
+N:	Naoki Matsumoto <n-matsumoto@melcoinc.co.jp>
+F:	package/pcre2/
+
 N:	Nathan Lynch <ntl@pobox.com>
 F:	package/chrony/
 
@@ -1465,14 +1468,6 @@ F:	package/biosdevname/
 
 N:	Rémi Rérolle <remi.rerolle@gmail.com>
 F:	package/libfreeimage/
-
-N:	Sagaert Johan <sagaert.johan@skynet.be>
-F:	package/git/
-F:	package/gsl/
-F:	package/jquery-mobile/
-F:	package/libgsasl/
-F:	package/qdecoder/
-F:	package/qlibc/
 
 N:	Sam Bobroff <sam.bobroff@au1.ibm.com>
 F:	arch/Config.in.powerpc
@@ -1774,6 +1769,7 @@ N:	Wojciech Niziński <niziak@spox.org>
 F:	package/fwup/
 
 N:	Yann E. MORIN <yann.morin.1998@free.fr>
+F:	fs/squashfs/
 F:	package/cegui06/
 F:	package/celt051/
 F:	package/dtc/
