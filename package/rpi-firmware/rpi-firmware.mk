@@ -33,7 +33,7 @@ define RPI_FIRMWARE_INSTALL_TARGET_CMDS
 		$(TARGET_DIR)/usr/sbin/vcdbg
 	$(INSTALL) -D -m 0700 $(@D)/$(if BR2_ARM_EABIHF,hardfp/)opt/vc/bin/vcgencmd \
 		$(TARGET_DIR)/usr/sbin/vcgencmd
-	$(INSTALL) -D -m 0700 $(@D)/$(if BR2_ARM_EABIHF,hardfp/)opt/vc/lib/libelftoolchain.so \
+	$(INSTALL) -D -m 0644 $(@D)/$(if BR2_ARM_EABIHF,hardfp/)opt/vc/lib/libelftoolchain.so \
 		$(TARGET_DIR)/usr/lib/libelftoolchain.so
 endef
 endif # INSTALL_VCDBG
