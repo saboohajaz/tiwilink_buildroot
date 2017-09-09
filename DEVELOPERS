@@ -243,6 +243,7 @@ F:	package/libogg/
 F:	package/libopenh264/
 F:	package/libpciaccess/
 F:	package/libplatform/
+F:	package/libpng/
 F:	package/libsidplay2/
 F:	package/libsilk/
 F:	package/libsndfile/
@@ -1627,6 +1628,9 @@ F:	package/isl/
 N:	Steven Noonan <steven@uplinklabs.net>
 F:	package/hwloc/
 F:	package/powertop/
+
+N:	Sven Haardiek <sven.haardiek@greenbone.net>
+F:	package/lcdproc/
 
 N:	Sven Neumann <neumann@teufel.de>
 F:	package/gstreamer1/gst1-libav/
