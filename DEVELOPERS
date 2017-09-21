@@ -49,6 +49,11 @@ F:	package/sngrep/
 N:	Adrian Perez de Castro <aperez@igalia.com>
 F:	package/webkitgtk/
 
+N:	Aleksander Morgado <aleksander@aleksander.es>
+F:	package/libmbim/
+F:	package/libqmi/
+F:	package/modem-manager/
+
 N:	Alex Suykov <alex.suykov@gmail.com>
 F:	package/vboot-utils/
 
@@ -1236,7 +1241,6 @@ N:	Maxime Ripard <maxime.ripard@free-electrons.com>
 F:	package/kmsxx/
 
 N:	Michael Rommel <rommel@layer-7.net>
-F:	package/aiccu/
 F:	package/knock/
 F:	package/python-crc16/
 F:	package/python-pyzmq/
@@ -1257,9 +1261,6 @@ F:	package/monkey/
 N:	Murat Demirten <mdemirten@yh.com.tr>
 F:	package/jpeg-turbo/
 F:	package/libgeotiff/
-
-N:	Naoki Matsumoto <n-matsumoto@melcoinc.co.jp>
-F:	package/pcre2/
 
 N:	Nathan Lynch <ntl@pobox.com>
 F:	package/chrony/
@@ -1325,6 +1326,7 @@ N:	Peter Korsgaard <peter@korsgaard.com>
 F:	board/orangepi/
 F:	configs/orangepi_pc_defconfig
 F:	package/flickcurl/
+F:	package/fscryptctl/
 F:	package/jo/
 F:	package/libfastjson/
 F:	package/lzop/
