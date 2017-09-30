@@ -120,8 +120,8 @@ gdb_bfin_bf512_defconfig: *defconfig
 grinn_chiliboard_defconfig: *defconfig
 grinn_liteboard_defconfig: *defconfig
 imx23evk_defconfig: *defconfig
-imx6q-sabresd_defconfig: *defconfig
-imx6q-sabresd_qt5_defconfig: *defconfig
+imx6-sabresd_defconfig: *defconfig
+imx6-sabresd_qt5_defconfig: *defconfig
 imx6ulpico_defconfig: *defconfig
 imx7dpico_defconfig: *defconfig
 lego_ev3_defconfig: *defconfig
@@ -175,6 +175,7 @@ qemu_mips64r6el_malta_defconfig: *defconfig
 qemu_nios2_10m50_defconfig: *defconfig
 qemu_or1k_defconfig: *defconfig
 qemu_ppc64_pseries_defconfig: *defconfig
+qemu_ppc64le_pseries_defconfig: *defconfig
 qemu_ppc_g3beige_defconfig: *defconfig
 qemu_ppc_mpc8544ds_defconfig: *defconfig
 qemu_ppc_virtex_ml507_defconfig: *defconfig
@@ -190,6 +191,7 @@ raspberrypi0_defconfig: *defconfig
 raspberrypi2_defconfig: *defconfig
 raspberrypi3_64_defconfig: *defconfig
 raspberrypi3_defconfig: *defconfig
+raspberrypi3_qt5we_defconfig: *defconfig
 raspberrypi_defconfig: *defconfig
 riotboard_defconfig: *defconfig
 roseapplepi_defconfig: *defconfig
