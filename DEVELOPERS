@@ -197,6 +197,7 @@ F:	package/alsa-utils/
 F:	package/apache/
 F:	package/apr/
 F:	package/apr-util/
+F:	package/bcg729/
 F:	package/bluez-tools/
 F:	package/clamav/
 F:	package/dovecot/
@@ -206,6 +207,7 @@ F:	package/eudev/
 F:	package/exim/
 F:	package/fetchmail/
 F:	package/freeswitch/
+F:	package/freeswitch-mod-bcg729/
 F:	package/ffmpeg/
 F:	package/ghostscript/
 F:	package/giflib/
@@ -874,6 +876,7 @@ F:	package/keepalived/
 N:	Jagan Teki <jagan@amarulasolutions.com>
 F:	board/engicam/
 F:	configs/engicam_imx6qdl_icore_defconfig
+F:	configs/engicam_imx6qdl_icore_qt5_defconfig
 F:	configs/engicam_imx6qdl_icore_rqs_defconfig
 F:	configs/engicam_imx6ul_geam_defconfig
 F:	configs/engicam_imx6ul_isiot_defconfig
@@ -1336,6 +1339,7 @@ F:	package/dump1090/
 F:	package/flickcurl/
 F:	package/fscryptctl/
 F:	package/jo/
+F:	package/jose/
 F:	package/libfastjson/
 F:	package/lzop/
 F:	package/memtool/
