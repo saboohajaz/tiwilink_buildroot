@@ -497,6 +497,9 @@ F:	package/nss-pam-ldapd/
 F:	package/sp-oops-extract/
 F:	package/unscd/
 
+N:	Dushara Jayasinghe <nidujay@gmail.com>
+F:	package/prosody/
+
 N:	Ed Swierk <eswierk@skyportsystems.com>
 F:	package/xxhash/
 
@@ -1341,6 +1344,7 @@ F:	package/fscryptctl/
 F:	package/jo/
 F:	package/jose/
 F:	package/libfastjson/
+F:	package/luksmeta/
 F:	package/lzop/
 F:	package/memtool/
 F:	package/mosquitto/
