@@ -409,7 +409,6 @@ F:	package/libselinux/
 F:	package/libsemanage/
 F:	package/libsepol/
 F:	package/policycoreutils/
-F:	package/sepolgen/
 F:	package/ustr/
 
 N:	Corentin Guillevic <corentin.guillevic@smile.fr>
@@ -728,7 +727,9 @@ N:	Ilias Apalodimas <apalos@gmail.com>
 F:	package/keepalived/
 
 N:	Jagan Teki <jagan@amarulasolutions.com>
+F:	board/bananapi/
 F:	board/engicam/
+F:	configs/bananapi_m1_defconfig
 F:	configs/engicam_imx6qdl_icore_defconfig
 F:	configs/engicam_imx6qdl_icore_qt5_defconfig
 F:	configs/engicam_imx6qdl_icore_rqs_defconfig
@@ -1036,7 +1037,6 @@ F:	package/python-posix-ipc/
 F:	package/python-pypcap/
 F:	package/python-pyrex/
 F:	package/raptor/
-F:	package/sepolgen/
 F:	package/setools/
 F:	package/smcroute/
 F:	package/tclap/
@@ -1330,6 +1330,8 @@ F:	package/libspatialindex/
 F:	package/linux-syscall-support/
 F:	package/lugaru/
 F:	package/mcelog/
+F:	package/minetest/
+F:	package/minetest-game/
 F:	package/openpowerlink/
 F:	package/physfs/
 F:	package/stress-ng/
