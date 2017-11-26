@@ -57,6 +57,7 @@ F:	package/setools/
 F:	package/sngrep/
 
 N:	Adrian Perez de Castro <aperez@igalia.com>
+F:	package/libepoxy/
 F:	package/webkitgtk/
 
 N:	Aleksander Morgado <aleksander@aleksander.es>
@@ -124,6 +125,7 @@ N:	Andy Kennedy <andy.kennedy@adtran.com>
 F:	package/libunwind/
 
 N:	Angelo Compagnucci <angelo.compagnucci@gmail.com>
+F:	package/i2c-tools/
 F:	package/mono/
 F:	package/mono-gtksharp3/
 F:	package/monolite/
@@ -608,6 +610,7 @@ F:	package/gupnp-dlna/
 F:	package/gupnp-tools/
 F:	package/hiredis/
 F:	package/igd2-for-linux/
+F:	package/libupnp/
 F:	package/minissdpd/
 F:	package/motion/
 F:	package/tinycbor/
