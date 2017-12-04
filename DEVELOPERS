@@ -1021,6 +1021,7 @@ F:	package/libkcapi/
 
 N:	Marcus Folkesson <marcus.folkesson@gmail.com>
 F:	package/libostree/
+F:	utils/config
 F:	utils/diffconfig
 
 N:	Marek Belisko <marek.belisko@open-nandra.com>
@@ -1084,6 +1085,7 @@ F:	package/iperf/
 F:	package/iperf3/
 F:	package/iputils/
 F:	package/iw/
+F:	package/kvm-unit-tests/
 F:	package/libcsv/
 F:	package/libcurl/
 F:	package/libfcgi/
@@ -1506,14 +1508,17 @@ F:	package/lua-resty-http/
 F:	package/mpir/
 
 N:	Sergey Matyukevich <geomatsi@gmail.com>
-F:	package/xr819-xradio/
-F:	package/armbian-firmware/
+F:	board/linksprite/pcduino
 F:	board/orangepi/orangepi-zero
 F:	board/orangepi/orangepi-one
-F:	board/linksprite/pcduino
-F:	configs/orangepi_one_defconfig
-F:	configs/orangepi_zero_defconfig
+F:	board/orangepi/orangepi-pc-plus/
 F:	configs/linksprite_pcduino_defconfig
+F:	configs/orangepi_one_defconfig
+F:	configs/orangepi_pc_plus_defconfig
+F:	configs/orangepi_zero_defconfig
+F:	package/armbian-firmware/
+F:	package/rtl8189fs/
+F:	package/xr819-xradio/
 
 N:	Sergio Prado <sergio.prado@e-labworks.com>
 F:	package/libgdiplus/
@@ -1622,6 +1627,7 @@ N:	Sébastien Szymanski <sebastien.szymanski@armadeus.com>
 F:	package/mmc-utils/
 F:	package/python-flask-jsonrpc/
 F:	package/python-flask-login/
+F:	package/qt5/qt5charts/
 
 N:	Theo Debrouwere <t.debrouwere@televic.com>
 F:	package/pugixml/
