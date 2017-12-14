@@ -60,6 +60,9 @@ N:	Adrian Perez de Castro <aperez@igalia.com>
 F:	package/libepoxy/
 F:	package/webkitgtk/
 
+N:	Adrien Gallouët <adrien@gallouet.fr>
+F:	package/glorytun/
+
 N:	Aleksander Morgado <aleksander@aleksander.es>
 F:	package/libmbim/
 F:	package/libqmi/
@@ -181,6 +184,9 @@ F:	package/luaposix/
 F:	package/luasec/
 F:	package/lua-ev/
 F:	package/orbit/
+
+N:	Bartosz Bilas <b.bilas@grinn-global.com>
+F:	package/qt5/qt5scxml/
 
 N:	Bartosz Golaszewski <brgl@bgdev.pl>
 F:	package/autoconf-archive/
@@ -759,6 +765,9 @@ F:	package/angularjs/
 N:	Ilias Apalodimas <apalos@gmail.com>
 F:	package/keepalived/
 
+N:	Ismael Luceno <ismael@iodev.co.uk>
+F:	package/axel/
+
 N:	Jagan Teki <jagan@amarulasolutions.com>
 F:	board/bananapi/
 F:	board/engicam/
@@ -779,6 +788,10 @@ F:	package/libpqxx/
 F:	package/pangomm/
 F:	package/rpm/
 F:	package/yad/
+
+N:	Jan Kraval <jan.kraval@gmail.com>
+F:	board/orangepi/orangepi-lite
+F:	configs/orangepi_lite_defconfig
 
 N:	Jan Pedersen <jp@jp-embedded.com>
 F:	package/zip/
@@ -1030,6 +1043,9 @@ F:	package/polkit/
 F:	package/sg3_utils/
 F:	package/udisks/
 
+N:	Mario Lang <mlang@blind.guru>
+F:	package/lynx/
+
 N:	Mario Rugiero <mrugiero@gmail.com>
 F:	package/ratpoison/
 
@@ -1086,6 +1102,7 @@ F:	package/iperf3/
 F:	package/iputils/
 F:	package/iw/
 F:	package/kvm-unit-tests/
+F:	package/kvmtool/
 F:	package/libcsv/
 F:	package/libcurl/
 F:	package/libfcgi/
@@ -1126,6 +1143,7 @@ F:	package/unionfs/
 F:	package/valijson/
 F:	package/wpa_supplicant/
 F:	package/wireless_tools/
+F:	package/xen/
 
 N:	Mauro Condarelli <mc5686@mclink.it>
 F:	package/mc/
@@ -1266,10 +1284,8 @@ F:	package/google-breakpad/
 N:	Patrick Gerber <kpa_info@yahoo.fr>
 F:	package/yavta/
 
-N:	Paul Cercueil <paul.cercueil@analog.com>
-F:	package/libiio/
-
 N:	Paul Cercueil <paul@crapouillou.net>
+F:	package/libiio/
 F:	package/lightning/
 
 N:	Pedro Aguilar <paguilar@paguilar.org>
@@ -1508,6 +1524,9 @@ F:	package/lua-resty-http/
 F:	package/mpir/
 
 N:	Sergey Matyukevich <geomatsi@gmail.com>
+F:	boot/arm-trusted-firmware/
+F:	boot/binaries-marvell/
+F:	boot/mv-ddr-marvell/
 F:	board/linksprite/pcduino
 F:	board/orangepi/orangepi-zero
 F:	board/orangepi/orangepi-one
@@ -1849,6 +1868,7 @@ F:	package/modem-manager/
 F:	package/nuttcp/
 F:	package/parted/
 F:	package/phytool/
+F:	package/poco/
 F:	package/python*
 F:	package/ser2net/
 F:	package/socketcand/
