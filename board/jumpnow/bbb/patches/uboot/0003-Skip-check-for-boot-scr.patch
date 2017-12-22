@@ -1,17 +1,17 @@
-From b384dff87de6c0f56d376429ee66772117122246 Mon Sep 17 00:00:00 2001
+From 8acb4115d9058ae78e6ea7aa13a711210609bdd9 Mon Sep 17 00:00:00 2001
 From: Scott Ellis <scott@jumpnowtek.com>
-Date: Mon, 15 May 2017 05:03:51 -0400
-Subject: [PATCH 3/3] Skip check for boot.scr
+Date: Sun, 24 Sep 2017 08:32:50 -0400
+Subject: [PATCH 3/3] Skip check for boot scr
 
 ---
  include/environment/ti/mmc.h | 18 +++++++-----------
  1 file changed, 7 insertions(+), 11 deletions(-)
 
 diff --git a/include/environment/ti/mmc.h b/include/environment/ti/mmc.h
-index b987f71..56075ce 100644
+index 4305ebd..58a40ea 100644
 --- a/include/environment/ti/mmc.h
 +++ b/include/environment/ti/mmc.h
-@@ -26,17 +26,13 @@
+@@ -29,17 +29,13 @@
  	"envboot=mmc dev ${mmcdev}; " \
  		"if mmc rescan; then " \
  			"echo SD/MMC found on device ${mmcdev};" \
