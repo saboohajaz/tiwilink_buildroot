@@ -43,6 +43,7 @@ F:	package/gstreamer1/gst1-plugins-ugly/
 F:	package/gstreamer1/gst1-vaapi/
 F:	package/imx-usb-loader/
 F:	package/janus-gateway/
+F:	package/json-for-modern-cpp/
 F:	package/libressl/
 F:	package/libselinux/
 F:	package/libsemanage/
@@ -536,12 +537,14 @@ N:	Ed Swierk <eswierk@skyportsystems.com>
 F:	package/xxhash/
 
 N:	Eric Le Bihan <eric.le.bihan.dev@free.fr>
+F:	docs/manual/adding-packages-meson.txt
 F:	package/adwaita-icon-theme/
 F:	package/darkhttpd/
 F:	package/eudev/
 F:	package/execline/
 F:	package/hicolor-icon-theme/
 F:	package/jemalloc/
+F:	package/meson/
 F:	package/ninja/
 F:	package/s6/
 F:	package/s6-dns/
@@ -841,9 +844,11 @@ F:	board/qemu/ppc64le-pseries/
 F:	configs/qemu_ppc64le_pseries_defconfig
 
 N:	Joseph Kogut <joseph.kogut@gmail.com>
+F:	package/gconf/
 F:	package/python-raven/
 F:	package/python-schedule/
 F:	package/python-websockets/
+F:	package/python-xlib/
 
 N:	Johan Derycke <johanderycke@gmail.com>
 F:	package/python-libconfig/
@@ -976,6 +981,7 @@ F:	package/linuxconsoletools/
 N:	Kurt Van Dijck <dev.kurt@vandijck-laurijssen.be>
 F:	package/bcusdk/
 F:	package/libpthsem/
+F:	package/nilfs-utils/
 
 N:	Laurent Cans <laurent.cans@gmail.com>
 F:	package/aircrack-ng/
@@ -1023,6 +1029,12 @@ F:	package/python-keyring/
 F:	package/python-simplejson/
 F:	package/python-versiontools/
 F:	package/wilc1000-firmware/
+
+N:	Mahyar Koshkouei <mahyar.koshkouei@gmail.com>
+F:	package/ffmpeg/
+F:	package/mpv/
+F:	package/rpi-firmware/
+F:	package/rpi-userland/
 
 N:	Mamatha Inamdar <mamatha4@linux.vnet.ibm.com>
 F:	package/nvme/
@@ -1105,7 +1117,6 @@ F:	package/crda/
 F:	package/devmem2/
 F:	package/dnsmasq/
 F:	package/dosfstools/
-F:	package/eeprog/
 F:	package/eigen/
 F:	package/ethtool/
 F:	package/flashbench/
@@ -1274,6 +1285,9 @@ F:	package/libucl/
 N:	Noé Rubinstein <noe.rubinstein@gmail.com>
 F:	package/tpm-tools/
 F:	package/trousers/
+
+N:	Norbert Lange <nolange79@gmail.com>
+F:	package/tcf-agent/
 
 N:	Olaf Rempel <razzor@kopf-tisch.de>
 F:	package/ctorrent/
@@ -1462,6 +1476,7 @@ F:	package/iqvlinux/
 F:	package/irrlicht/
 F:	package/liblinear/
 F:	package/lensfun/
+F:	package/libgta/
 F:	package/libspatialindex/
 F:	package/linux-syscall-support/
 F:	package/lugaru/
@@ -1564,6 +1579,8 @@ F:	package/rtl8189fs/
 F:	package/xr819-xradio/
 
 N:	Sergio Prado <sergio.prado@e-labworks.com>
+F:	package/curlpp/
+F:	package/daq/
 F:	package/libgdiplus/
 F:	package/mongodb/
 F:	package/pimd/
@@ -1571,6 +1588,7 @@ F:	package/stella/
 F:	package/traceroute/
 F:	package/tunctl/
 F:	package/ubus/
+F:	package/wolfssl/
 
 N:	Simon Dawson <spdawson@gmail.com>
 F:	boot/at91bootstrap3/
@@ -1621,6 +1639,7 @@ F:	package/elfutils/
 F:	package/libtasn1/
 F:	package/proxychains-ng/
 F:	package/yasm/
+F:	package/zlib-ng/
 
 N:	Stefan Sørensen <stefan.sorensen@spectralink.com>
 F:	package/cracklib/
@@ -1843,6 +1862,7 @@ F:	package/libpri/
 F:	package/libseccomp/
 F:	package/libss7/
 F:	package/linux-tools/
+F:	package/matchbox*
 F:	package/mesa3d-headers/
 F:	package/nbd/
 F:	package/nut/
@@ -1864,6 +1884,7 @@ F:	package/vde2/
 F:	package/w_scan/
 F:	package/wayland/
 F:	package/weston/
+F:	package/zisofs-tools/
 F:	support/download/
 
 N:	Yegor Yefremov <yegorslists@googlemail.com>
