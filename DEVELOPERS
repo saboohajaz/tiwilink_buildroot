@@ -811,6 +811,9 @@ F:	package/pangomm/
 F:	package/rpm/
 F:	package/yad/
 
+N:	Jan Heylen <jan.heylen@nokia.com>
+F:	package/opentracing-cpp/
+
 N:	Jan Kraval <jan.kraval@gmail.com>
 F:	board/orangepi/orangepi-lite
 F:	configs/orangepi_lite_defconfig
@@ -1301,6 +1304,7 @@ F:	package/python-pyelftools/
 
 N:	Olivier Schonken <olivier.schonken@gmail.com>
 F:	package/cups/
+F:	package/cups-filters/
 F:	package/ijs/
 F:	package/poppler/
 F:	package/qpdf/
@@ -1825,9 +1829,6 @@ F:	package/erlang/
 F:	package/libmicrohttpd/
 F:	package/sysprof/
 F:	package/time/
-
-N:	Will Newton <will.newton@imgtec.com>
-F:	package/numactl/
 
 N:	Will Wagner <will_wagner@carallon.com>
 F:	package/yaffs2utils/
