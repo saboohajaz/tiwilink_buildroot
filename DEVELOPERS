@@ -44,6 +44,7 @@ F:	package/gstreamer1/gst1-vaapi/
 F:	package/imx-usb-loader/
 F:	package/janus-gateway/
 F:	package/json-for-modern-cpp/
+F:	package/libcpprestsdk/
 F:	package/libressl/
 F:	package/libselinux/
 F:	package/libsemanage/
@@ -622,6 +623,7 @@ F:	package/alljoyn-base/
 F:	package/alljoyn-tcl/
 F:	package/alljoyn-tcl-base/
 F:	package/boinc/
+F:	package/flatbuffers/
 F:	package/gtksourceview/
 F:	package/gssdp/
 F:	package/gupnp/
@@ -929,6 +931,9 @@ F:	package/qt5/
 N:	Julien Floret <julien.floret@6wind.com>
 F:	package/lldpd/
 
+N:	Laurent Charpentier <laurent_pubs@yahoo.com>
+F:	package/open-lldp/
+
 N:	Julien Viard de Galbert <julien@vdg.name>
 F:	package/dieharder/
 F:	package/easy-rsa/
@@ -1068,6 +1073,10 @@ F:	package/libkcapi/
 
 N:	Marcus Folkesson <marcus.folkesson@gmail.com>
 F:	package/libostree/
+F:	package/libselinux/
+F:	package/libsemanage/
+F:	package/libsepol/
+F:	package/selinux-python/
 F:	utils/config
 F:	utils/diffconfig
 
@@ -1583,6 +1592,7 @@ F:	package/rtl8189fs/
 F:	package/xr819-xradio/
 
 N:	Sergio Prado <sergio.prado@e-labworks.com>
+F:	package/aoetools/
 F:	package/curlpp/
 F:	package/daq/
 F:	package/libgdiplus/
@@ -1862,6 +1872,7 @@ F:	package/libiscsi/
 F:	package/libpri/
 F:	package/libseccomp/
 F:	package/libss7/
+F:	package/linux-firmware/
 F:	package/linux-tools/
 F:	package/matchbox*
 F:	package/mesa3d-headers/
