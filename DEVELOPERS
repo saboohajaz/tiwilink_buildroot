@@ -342,6 +342,7 @@ F:	package/python-pylru/
 F:	package/python-requests-oauthlib/
 F:	package/python-slob/
 F:	package/rtmpdump/
+F:	package/samba4/
 F:	package/softether/
 F:	package/taglib/
 F:	package/tinyxml2/
@@ -1171,6 +1172,7 @@ F:	package/policycoreutils/
 F:	package/proftpd/
 F:	package/protobuf-c/
 F:	package/protobuf/
+F:	package/python-flask-cors/
 F:	package/python-ipy/
 F:	package/python-posix-ipc/
 F:	package/python-pypcap/

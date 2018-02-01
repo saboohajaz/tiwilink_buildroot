@@ -2,7 +2,7 @@
 #
 # Copyright (C) 1999-2005 by Erik Andersen <andersen@codepoet.org>
 # Copyright (C) 2006-2014 by the Buildroot developers <buildroot@uclibc.org>
-# Copyright (C) 2014-2017 by the Buildroot developers <buildroot@buildroot.org>
+# Copyright (C) 2014-2018 by the Buildroot developers <buildroot@buildroot.org>
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -729,7 +729,8 @@ endif
 		echo "ID=buildroot"; \
 		echo "VERSION_ID=$(BR2_VERSION)"; \
 		echo "PRETTY_NAME=\"Buildroot $(BR2_VERSION)\"" \
-	) >  $(TARGET_DIR)/etc/os-release
+	) >  $(TARGET_DIR)/usr/lib/os-release
+	ln -sf ../usr/lib/os-release $(TARGET_DIR)/etc
 
 	@$(call MESSAGE,"Sanitizing RPATH in target tree")
 	$(TOPDIR)/support/scripts/fix-rpath target
