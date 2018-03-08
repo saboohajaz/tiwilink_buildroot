@@ -51,7 +51,9 @@ F:	package/libsemanage/
 F:	package/libsepol/
 F:	package/nginx-naxsi/
 F:	package/policycoreutils/
+F:	package/python-flask-sqlalchemy/
 F:	package/python-mutagen/
+F:	package/python-sqlalchemy/
 F:	package/restorecond/
 F:	package/refpolicy/
 F:	package/selinux-python/
@@ -72,6 +74,8 @@ F:	package/libqmi/
 F:	package/modem-manager/
 
 N:	Alex Suykov <alex.suykov@gmail.com>
+F:	board/chromebook/snow/
+F:	configs/chromebook_snow_defconfig
 F:	package/vboot-utils/
 
 N:	Alexander Clouter <alex+buildroot@digriz.org.uk>
@@ -98,7 +102,7 @@ N:	Alexandre Esse <alexandre.esse.dev@gmail.com>
 F:	package/kvazaar/
 F:	package/v4l2loopback/
 
-N:	Alistair Francis <alistair.francis@xilinx.com>
+N:	Alistair Francis <alistair@alistair23.me>
 F:	package/xen/
 
 N:	Alvaro G. M <alvaro.gamez@hazent.com>
@@ -174,6 +178,9 @@ F:	package/python-bottle/
 F:	package/sqlcipher/
 F:	package/stress/
 
+N:	Asaf Kahlon <asafka7@gmail.com>
+F:	package/python-jsonmodels/
+
 N:	Ash Charles <ash.charles@savoirfairelinux.com>
 F:	package/pru-software-support/
 F:	package/ti-cgt-pru/
@@ -203,6 +210,7 @@ F:	package/pulseview/
 F:	package/sigrok-cli/
 
 N:	Baruch Siach <baruch@tkos.co.il>
+F:	package/18xx-ti-utils/
 F:	package/daemon/
 F:	package/dropbear/
 F:	package/ebtables/
@@ -456,6 +464,8 @@ F:	arch/Config.in.powerpc
 F:	package/kvm-unit-tests
 
 N:	Dagg Stompler <daggs@gmx.com>
+F:	board/hardkernel/odroidc2
+F:	configs/odroidc2_defconfig
 F:	package/libamcodec/
 F:	package/odroid-mali/
 F:	package/odroid-scripts/
@@ -466,7 +476,6 @@ F:	package/log4cpp/
 
 N:	Daniel Nyström <daniel.nystrom@timeterminal.se>
 F:	package/e2tools/
-F:	package/fbgrab/
 
 N:	Daniel Price <daniel.price@gmail.com>
 F:	package/nodejs/
@@ -587,6 +596,8 @@ N:	Evan Zelkowitz <evan.zelkowitz@gmail.com>
 F:	package/sdl_gfx/
 
 N:	Ezequiel Garcia <ezequiel@vanguardiasur.com.ar>
+F:	board/ci20/
+F:	configs/ci20_defconfig
 F:	arch/Config.in.nios2
 F:	package/fio/
 F:	package/iptraf-ng/
@@ -600,11 +611,16 @@ F:	package/supertuxkart/
 N:	Fabio Estevam <festevam@gmail.com>
 F:	board/warp7/
 F:	configs/freescale_imx*
-F:	configs/imx6-sabresd*
+F:	configs/imx23evk_defconfig
+F:	configs/imx6-sabre*
 F:	configs/imx6slevk_defconfig
 F:	configs/imx6sx-sdb_defconfig
 F:	configs/imx6ulevk_defconfig
 F:	configs/imx6ulpico_defconfig
+F:	configs/imx7dpico_defconfig
+F:	configs/mx25pdk_defconfig
+F:	configs/mx51evk_defconfig
+F:	configs/mx53loco_defconfig
 F:	configs/mx6cubox_defconfig
 F:	configs/mx6sx_udoo_neo_defconfig
 F:	configs/mx6udoo_defconfig
@@ -728,6 +744,10 @@ F:	package/ocrad/
 F:	package/tesseract-ocr/
 F:	package/webp/
 
+N:	Giulio Benetti <giulio.benetti@micronovasrl.com>
+F:	package/sunxi-mali-mainline/
+F:	package/sunxi-mali-mainline-driver/
+
 N:	Gregory Dymarek <gregd72002@gmail.com>
 F:	package/ding-libs/
 F:	package/gengetopt/
@@ -782,8 +802,12 @@ N:	Ismael Luceno <ismael@iodev.co.uk>
 F:	package/axel/
 
 N:	Jagan Teki <jagan@amarulasolutions.com>
+F:	board/amarula/
+F:	board/asus/
 F:	board/bananapi/
 F:	board/engicam/
+F:	configs/amarula_vyasa_rk3288_defconfig
+F:	configs/asus_tinker_rk3288_defconfig
 F:	board/friendlyarm/nanopi-a64/
 F:	board/friendlyarm/nanopi-neo2/
 F:	board/olimex/a64-olinuxino/
@@ -1686,6 +1710,7 @@ F:	package/dvdrw-tools/
 F:	package/memtest86/
 F:	package/mjpegtools/
 F:	package/tovid/
+F:	package/udftools/
 F:	package/xorriso/
 
 N:	Steve Thomas <scjthm@live.com>
@@ -1792,6 +1817,9 @@ F:	toolchain/
 
 N:	Tiago Brusamarello <tiago.brusamarello@datacom.ind.br>
 F:	package/aer-inject/
+
+N:	Timo Ketola <timo.ketola@exertus.fi>
+F:	package/fbgrab/
 
 N:	Tzu-Jung Lee <roylee17@gmail.com>
 F:	package/dropwatch/

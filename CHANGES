@@ -1,3 +1,48 @@
+2018.02, Released March 4th, 2018
+
+	Fixes all over the tree.
+
+	Issues with systemd with a readonly rootfs and DBus fixed.
+
+	Instructure:
+	- check-uniq-files: fix Python 2.6 compatibility.
+	- dependencies.sh: check for external argparse module for
+	  Python 2.6.
+	- Add infrastructure to detect and use a UTF-8 locale on the
+	  host, needed by systemd.
+
+	Update/fixed packages: clamav, dash, dhcp, dovecot, efl,
+	ffmpeg, libv4l, mono, mosquitto, php, postgresql, qt,
+	scanpypi, sdl2, systemd, tor, tvheadend, uboot, wavpack
+
+	Issues resolved (http://bugs.uclibc.org):
+
+	#10831: qemu_x86_64_defconfig build fails on linux-headers..
+
+2018.02-rc3, Released February 27th, 2018
+
+	Fixes all over the tree.
+
+	check-bin-arch: skip /lib/modules to allow 32-bit userland
+	with 64bit kernel.
+
+	dependencies: Blacklist tar 1.30+ and build our own host-tar
+	if needed as tar 1.30+ changed the --numeric-owner output for
+	long path names. Build host-tar before other host-dependencies
+	as they need it to extract their source tarballs.
+
+	Update/fixed packages: asterisk, azmq, bluez5_utils, domoticz,
+	e2fsprogs, erlang, exim, glibc, gpsd, jq, libglib2, libvorbis,
+	mariadb, mbedtls, mesa3d, mesa3d-headers, mpv, patch, pcre2,
+	php, qt5, qt5multimedia, qt5wayland, qt5webengine, qt5webkit,
+	systemd, quagga, rustc, uboot, wireguard, zic, zlib-ng
+
+	Issues resolved (http://bugs.uclibc.org):
+
+	#10726: Current libglib2.mk creates broken libglib2 binary...
+	#10786: Linux fails to build unless make linux-menuconfig...
+	#10796: Cannot generate cpio image without selecting CON...
+
 2018.02-rc2, Released February 15th, 2018
 
 	Fixes all over the tree.
