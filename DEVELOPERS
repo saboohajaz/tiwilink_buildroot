@@ -427,6 +427,7 @@ F:	package/aufs-util/
 F:	package/batman-adv/
 F:	package/docker-containerd/
 F:	package/docker-engine/
+F:	package/docker-proxy/
 F:	package/mosh/
 F:	package/rtl8821au/
 F:	package/runc/
@@ -652,6 +653,7 @@ F:	package/gupnp-dlna/
 F:	package/gupnp-tools/
 F:	package/hiredis/
 F:	package/igd2-for-linux/
+F:	package/libmpdclient/
 F:	package/libupnp/
 F:	package/libupnp18/
 F:	package/minissdpd/
@@ -1149,6 +1151,10 @@ F:	configs/ts4900_defconfig
 F:	package/ts4900-fpga/
 
 N:	Matt Weber <matthew.weber@rockwellcollins.com>
+F:	board/freescale/p*
+F:	board/freescale/t*
+F:	configs/freescale_p*
+F:	configs/freescale_t*
 F:	package/argp-standalone/
 F:	package/aufs/
 F:	package/aufs-util/
@@ -1373,6 +1379,7 @@ F:	package/libunistring/
 N:	Peter Korsgaard <peter@korsgaard.com>
 F:	board/orangepi/
 F:	configs/orangepi_pc_defconfig
+F:	package/docker-compose/
 F:	package/dump1090/
 F:	package/flickcurl/
 F:	package/fscryptctl/
@@ -1384,11 +1391,19 @@ F:	package/lzop/
 F:	package/memtool/
 F:	package/mosquitto/
 F:	package/python-alsaaudio/
+F:	package/python-backports-ssl-match-hostname/
+F:	package/python-cached-property/
+F:	package/python-docker/
+F:	package/python-dockerpty/
+F:	package/python-docker-pycreds/
 F:	package/python-enum/
 F:	package/python-enum34/
+F:	package/python-functools32/
 F:	package/python-ipaddr/
 F:	package/python-pam/
 F:	package/python-psutil/
+F:	package/python-texttable/
+F:	package/python-websocket-client/
 F:	package/triggerhappy/
 
 N:	Peter Seiderer <ps.report@gmx.net>
@@ -1848,6 +1863,10 @@ F:	package/pixz/
 
 N:	Vinicius Tinti <viniciustinti@gmail.com>
 F:	package/python-thrift/
+
+N:	Vivien Didelot <vivien.didelot@savoirfairelinux.com>
+F:	board/technologic/ts5500/
+F:	configs/ts5500_defconfig
 
 N:	Volkov Viacheslav <sv99@inbox.ru>
 F:	package/v4l2grab/
