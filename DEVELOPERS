@@ -62,8 +62,10 @@ F:	package/setools/
 F:	package/sngrep/
 
 N:	Adrian Perez de Castro <aperez@igalia.com>
+F:	package/brotli/
 F:	package/libepoxy/
 F:	package/webkitgtk/
+F:	package/woff2/
 
 N:	Adrien Gallouët <adrien@gallouet.fr>
 F:	package/glorytun/
@@ -665,6 +667,9 @@ F:	package/rygel/
 F:	package/safeclib/
 F:	package/tinycbor/
 F:	package/tinydtls/
+
+N:	Falco Hyfing <hyfinglists@gmail.com>
+F:	package/python-pymodbus/
 
 N:	Floris Bos <bos@je-eigen-domein.nl>
 F:	package/ipmitool/
@@ -1287,6 +1292,11 @@ F:	package/tinyxml/
 N:	Maxime Ripard <maxime.ripard@bootlin.com>
 F:	package/kmsxx/
 
+N:	Michael Durrant <mdurrant@arcturusnetworks.com>
+F:	board/arcturus/
+F:	configs/arcturus_ucp1020_defconfig
+F:	configs/arcturus_ucls1012a_defconfig
+
 N:	Michael Rommel <rommel@layer-7.net>
 F:	package/knock/
 F:	package/python-crc16/
@@ -1344,6 +1354,11 @@ F:	package/tcf-agent/
 
 N:	Olaf Rempel <razzor@kopf-tisch.de>
 F:	package/ctorrent/
+
+N:	Oleksandr Zhadan <oleks@arcturusnetworks.com>
+F:	board/arcturus/
+F:	configs/arcturus_ucp1020_defconfig
+F:	configs/arcturus_ucls1012a_defconfig
 
 N:	Oli Vogt <oli.vogt.pub01@gmail.com>
 F:	package/python-django/
