@@ -4,8 +4,8 @@
 #
 ################################################################################
 
-TSPRESS_VERSION = master
-TSPRESS_SITE = git://github.com/scottellis/tspress 
+TSPRESS_VERSION = 82a7a614ad858818b0db4d91583a15602c44b42a
+TSPRESS_SITE = $(call github,scottellis,tspress,$(TSPRESS_VERSION))
 TSPRESS_LICENSE = MIT
 
 TSPRESS_DEPENDENCIES = qt5base

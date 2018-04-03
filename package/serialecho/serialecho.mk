@@ -5,7 +5,7 @@
 ################################################################################
 
 SERIALECHO_VERSION = 7acc974041f2e8cb55f892140b306a8c76093811
-SERIALECHO_SITE = git://github.com/scottellis/serialecho 
+SERIALECHO_SITE = $(call github,scottellis,serialecho,$(SERIALECHO_VERSION))
 SERIALECHO_LICENSE = MIT
 SERIALECHO_LICENSE_FILES = README.md
 
