@@ -4,8 +4,8 @@
 #
 ################################################################################
 
-MCP3008_POLL_VERSION = master
-MCP3008_POLL_SITE = git://github.com/scottellis/mcp3008-poll
+MCP3008_POLL_VERSION = d54edb071d886bb0dddafe4494758c8901f8d392
+MCP3008_POLL_SITE = $(call github,scottellis,mcp3008-poll,$(MCP3008_POLL_VERSION))
 MCP3008_POLL_LICENSE = MIT
 MCP3008_POLL_LICENSE_FILES = LICENSE
 
