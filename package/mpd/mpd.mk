@@ -59,6 +59,13 @@ else
 MPD_CONF_OPTS += --disable-bzip2
 endif
 
+ifeq ($(BR2_PACKAGE_MPD_CDIO_PARANOIA),y)
+MPD_DEPENDENCIES += libcdio-paranoia
+MPD_CONF_OPTS += --enable-cdio-paranoia
+else
+MPD_CONF_OPTS += --disable-cdio-paranoia
+endif
+
 ifeq ($(BR2_PACKAGE_MPD_CURL),y)
 MPD_DEPENDENCIES += libcurl
 MPD_CONF_OPTS += --enable-curl
@@ -118,6 +125,13 @@ MPD_DEPENDENCIES += libmpdclient
 MPD_CONF_OPTS += --enable-libmpdclient
 else
 MPD_CONF_OPTS += --disable-libmpdclient
+endif
+
+ifeq ($(BR2_PACKAGE_MPD_LIBMMS),y)
+MPD_DEPENDENCIES += libmms
+MPD_CONF_OPTS += --enable-mms
+else
+MPD_CONF_OPTS += --disable-mms
 endif
 
 ifeq ($(BR2_PACKAGE_MPD_LIBNFS),y)

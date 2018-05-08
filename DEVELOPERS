@@ -55,6 +55,7 @@ F:	package/python-flask-sqlalchemy/
 F:	package/python-mutagen/
 F:	package/python-psycopg2/
 F:	package/python-sqlalchemy/
+F:	package/python-visitor/
 F:	package/restorecond/
 F:	package/refpolicy/
 F:	package/selinux-python/
@@ -190,6 +191,7 @@ F:	package/stress/
 
 N:	Asaf Kahlon <asafka7@gmail.com>
 F:	package/python-jsonmodels/
+F:	package/python-subprocess32/
 F:	package/python-yieldfrom/
 F:	package/zeromq/
 
@@ -675,15 +677,28 @@ F:	package/gupnp-tools/
 F:	package/hiredis/
 F:	package/i2pd/
 F:	package/igd2-for-linux/
+F:	package/lftp/
 F:	package/libcap-ng/
 F:	package/libcdio-paranoia/
+F:	package/libcgicc/
+F:	package/libconfig/
+F:	package/libcue/
+F:	package/libebml/
+F:	package/libgee/
 F:	package/libglib2/
+F:	package/libgtk2/
+F:	package/libgtk3/
+F:	package/libidn/
+F:	package/libjpeg/
+F:	package/libmatroska/
 F:	package/libmpdclient/
 F:	package/libupnp/
 F:	package/libupnp18/
 F:	package/minissdpd/
 F:	package/motion/
+F:	package/mutt/
 F:	package/ncmpc/
+F:	package/pcmanfm/
 F:	package/rygel/
 F:	package/safeclib/
 F:	package/tinycbor/
@@ -704,6 +719,7 @@ F:	board/olimex/a20_olinuxino
 F:	configs/olimex_a20_olinuxino_*
 F:	package/4th/
 F:	package/botan/
+F:	package/chipmunk/
 F:	package/dado/
 F:	package/ficl/
 F:	package/gdbm/
@@ -1028,6 +1044,7 @@ F:	board/lemaker/bananapro/
 F:	configs/bananapro_defconfig
 F:	package/augeas/
 F:	package/bctoolbox/
+F:	package/freescale-imx/imx-alsa-plugins/
 F:	package/libshout/
 F:	package/libupnpp/
 F:	package/luv/
@@ -1067,6 +1084,7 @@ F:	boot/afboot-stm32/
 
 N:	Lionel Flandrin <lionel@svkt.org>
 F:	package/python-babel/
+F:	package/python-daemonize/
 F:	package/python-flask/
 F:	package/python-flask-babel/
 F:	package/python-gunicorn/
@@ -1522,10 +1540,6 @@ F:	package/psplash/
 F:	package/sispmctl/
 F:	package/zsh/
 
-N:	Philipp Claves <claves@budelmann-elektronik.com>
-F:	package/libassuan/
-F:	package/libgpgme/
-
 N:	Philippe Proulx <eeppeliteloop@gmail.com>
 F:	package/lttng-babeltrace/
 F:	package/lttng-libust/
@@ -1621,6 +1635,7 @@ F:	package/stress-ng/
 F:	package/supertux/
 F:	package/supertuxkart/
 F:	package/terminology/
+F:	package/tk/
 F:	package/upower/
 F:	package/xenomai/
 
@@ -1767,6 +1782,7 @@ N:	Stefan Fröberg <stefan.froberg@petroprogram.com>
 F:	package/elfutils/
 F:	package/libtasn1/
 F:	package/proxychains-ng/
+F:	package/vte/
 F:	package/yasm/
 F:	package/zlib-ng/
 
@@ -1806,8 +1822,9 @@ N:	Steven Noonan <steven@uplinklabs.net>
 F:	package/hwloc/
 F:	package/powertop/
 
-N:	Sven Haardiek <sven.haardiek@greenbone.net>
+N:	Sven Haardiek <sven.haardiek@iotec-gmbh.de>
 F:	package/lcdproc/
+F:	package/python-influxdb/
 
 N:	Sven Neumann <neumann@teufel.de>
 F:	package/gstreamer1/gst1-libav/
@@ -1912,6 +1929,7 @@ F:	package/dropwatch/
 F:	package/tstools/
 
 N:	Valentin Korenblit <valentin.korenblit@smile.fr>
+F:	package/clang/
 F:	package/llvm/
 
 N:	Vanya Sergeev <vsergeev@gmail.com>
@@ -1950,11 +1968,6 @@ N:	Wade Berrier <wberrier@gmail.com>
 F:	package/ngrep/
 
 N:	Waldemar Brodkorb <wbx@openadk.org>
-F:	arch/Config.in.m68k
-F:	arch/Config.in.or1k
-F:	arch/Config.in.sparc
-F:	package/glibc/
-F:	package/mksh/
 F:	package/uclibc/
 F:	package/uclibc-ng-test/
 
