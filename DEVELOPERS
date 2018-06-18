@@ -371,6 +371,7 @@ F:	package/python-slob/
 F:	package/rtmpdump/
 F:	package/samba4/
 F:	package/softether/
+F:	package/sqlite/
 F:	package/taglib/
 F:	package/tinyxml2/
 F:	package/tor/
@@ -959,7 +960,7 @@ F:	package/batctl/
 N:	Jeremy Rosen <jeremy.rosen@openwide.fr>
 F:	package/fxload/
 
-N:	Joel Carlson <joel.carlson@cosmicaes.com>
+N:	Joel Carlson <JoelsonCarl@gmail.com>
 F:	package/flatcc/
 
 N:	Joel Stanley <joel@jms.id.au>
@@ -1533,6 +1534,7 @@ F:	package/python-pam/
 F:	package/python-psutil/
 F:	package/python-request-id/
 F:	package/python-texttable/
+F:	package/python-validators/
 F:	package/python-webob/
 F:	package/python-websocket-client/
 F:	package/triggerhappy/
@@ -1825,14 +1827,6 @@ F:	package/libvpx/
 F:	package/mesa3d-demos/
 F:	package/sunxi-mali/
 F:	package/ti-gfx/
-
-N:	Stefan Fröberg <stefan.froberg@petroprogram.com>
-F:	package/elfutils/
-F:	package/libtasn1/
-F:	package/proxychains-ng/
-F:	package/vte/
-F:	package/yasm/
-F:	package/zlib-ng/
 
 N:	Stefan Sørensen <stefan.sorensen@spectralink.com>
 F:	package/cracklib/
